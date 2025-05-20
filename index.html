@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador RGB</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="toggleTheme" class="theme-toggle">🌙 Modo Escuro</button>
+
+  <div class="container">
+    <h1>Simulador de Cor-Luz (RGB)</h1>
+
+    <div class="sliders">
+      <div class="slider">
+        <label for="red">Vermelho</label>
+        <input type="range" id="red" min="0" max="255" value="0">
+      </div>
+      <div class="slider">
+        <label for="green">Verde</label>
+        <input type="range" id="green" min="0" max="255" value="0">
+      </div>
+      <div class="slider">
+        <label for="blue">Azul</label>
+        <input type="range" id="blue" min="0" max="255" value="0">
+      </div>
+    </div>
+
+    <div class="result">
+      <div class="color-box" id="colorBox"></div>
+      <p id="rgbValue">RGB(0, 0, 0)</p>
+      <p id="hexValue">#000000</p>
+      <button id="resetBtn" class="reset-btn">Reset</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Eunice de Faria. Todos os direitos reservados.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
